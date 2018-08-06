@@ -1,0 +1,122 @@
+.about {
+    width: 100%;
+    background: url(../img/logo_bg.svg) left no-repeat;
+    background-size: 29%;
+    margin-bottom: 100px;
+    h2 {
+        margin: 10px 0 -10px 0;
+        padding-top: 20px;
+    }
+}
+.about_wrap {
+    h3 {
+        margin-left: 33.33%;
+        width: 320px;
+    }
+}
+.about_text {
+    
+    padding-left: 33.33%;
+    -webkit-column-width: 320px;
+    -moz-column-width: 320px;
+    column-width: 320px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    p {
+        margin: 0;
+    }
+}
+
+/*park*/
+/*******************************************************************/
+.park {
+    margin-bottom: 100px;
+}
+.park_wrapper {
+    @include flexbox();
+    @include justify-content(space-between);
+}
+.park_item {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    padding: 280px 40px 0 40px;
+    margin-top: 80px;
+    background: url(../img/about/park_1.png) top center no-repeat;
+    /*background-size: 100%;*/
+    
+    p {
+        color: #999999;
+    }
+    h3 {
+        text-transform: uppercase;
+        color: #333333;
+    }
+    span {
+        font-weight: 800;
+        color: #000000;
+    }
+    .park_shift {
+        background: url(../img/about/manual.svg) top right no-repeat;
+    }
+    .park_shift_auto {
+        background: url(../img/about/auto.svg) top right no-repeat;
+    }
+    .park_price {
+        width: 310px;
+        @include flexbox();
+    @include justify-content(space-between);
+    }
+    .park_price span:nth-child(2) {
+        color: #f16522;
+        width: 50%;
+        text-align: right;
+    }
+}
+.park_item_2 {
+    margin-top: 0;
+    background: url(../img/about/park_2.png) top center no-repeat;
+}
+.park_item_2::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: inline-block;
+    height: 436px;
+    width: 1px;
+    background-color: #E5E5E5;
+}
+.park_item_2::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    display: inline-block;
+    height: 436px;
+    width: 1px;
+    background-color: #E5E5E5;
+}
+.park_item_3 {
+    background: url(../img/about/park_3.png) top center no-repeat;
+}
+/*teachers*/
+/*******************************************************************/
+.teachers_wrapper {
+    @include flexbox();
+    @include justify-content(space-between);
+}
+.teachers_item {
+    width: 220px;
+    text-align: center;
+    span {
+        display: inline-block;
+        padding-bottom: 20px;
+        color: #666666;
+        font-size: 12px;
+    }
+}

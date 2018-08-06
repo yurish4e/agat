@@ -1,0 +1,79 @@
+// VARS
+
+$footer-height: 200px;
+$container-width: 1180px;
+* {
+    box-sizing: border-box; 
+}
+/*.mobile {
+        display: none !important;
+    }*/
+body, html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+h1 {
+    font-size: 44px;
+    line-height: 79px;
+}
+h2 {
+    font-size: 32px;
+    line-height: 58px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 35px;
+}
+h4 {
+    font-size: 18px;
+    line-height: 26px;
+}
+p {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+.title {
+    font-family: 'Exo2-SemiBold';
+}
+.wrapper {
+    min-height: 100%;
+    min-width: $container-width;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper::after {
+    content: '';
+    display: block; 
+/*
+    height: $footer-height;
+*/
+    overflow: hidden;
+}
+.container {
+    width: $container-width;
+    margin: 0 auto;
+    @include flexbox();
+    @include flex-direction(column);
+}
+
+/*FOOTER*/
+
+footer {
+    height: $footer-height;
+    min-width: $container-width;
+    width: 100%;
+    /*margin-top: -$footer-height;*/
+    margin-top: 0;
+}

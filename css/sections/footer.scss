@@ -1,0 +1,74 @@
+.footer {
+    margin-top: 80px;
+    .container {
+        height: 200px;
+        border-top: 1px solid #CCCCCC;
+        margin-top: 20px;
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include align-items(center);
+    }
+    &_logo {
+        width: 50px;
+        height: 80px;
+        background: url(../img/header/logo.svg) center no-repeat;
+        background-size: 99%;
+    }
+    &_menu {}
+    &_right {}
+}
+
+.footer_center {
+    width: 700px;
+    height: 200px;
+    padding-left: 50px;
+    @include flexbox();
+    @include align-items(center);
+}
+
+.footer {
+    .nav {
+        padding: 0;
+        margin: 0;
+    }
+    .nav_main {
+        padding-left: 60px;
+        height: 130px;
+        @include flexbox();
+        @include flex-direction(column);
+        @include flex-wrap(wrap);
+        .nav_item:nth-child(4) {
+            margin-right: 0;
+        }
+        .nav_item {
+            padding: 10px 25px;
+        }
+        .nav_link {
+            line-height: 120%;
+        }
+    }
+}
+
+.footer_right {
+    width: 340px;
+    a {
+        text-decoration: none;
+    }
+    .social_wrap {
+        width: 200px;
+        margin-top: 10px;
+        @include justify-content(flex-start);
+    }
+    .fb,
+    .in,
+    .you {
+        margin-right: 40px;
+        margin-left: 0;
+    }
+    .call,
+    .write {
+        display: block;
+        width: 100%;
+    }
+}
